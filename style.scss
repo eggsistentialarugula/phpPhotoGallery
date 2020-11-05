@@ -1,0 +1,296 @@
+$border-Color:rgba(78, 19, 19,0.5);
+$origBorder-Color: rgba(78,19,19,0.4);
+$textNav-Color: rgb(210, 245, 226);
+$linkPopUpColor: rgba(210, 245, 226,0.9);
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    // overflow:hidden;
+}
+
+body{
+    background-color: rgb(226, 245, 245);
+}
+
+.container{
+    margin:0 auto;
+}
+.container .gallery a img {
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:10px;
+    margin-bottom:20px;
+    margin:10px;
+    // float: left;
+    width: 20%;
+    height: auto;
+    
+    -webkit-transition: -webkit-transform .15s ease;
+    -moz-transition: -moz-transform .15s ease;
+    -o-transition: -o-transform .15s ease;
+    -ms-transition: -ms-transform .15s ease;
+    transition: transform .15s ease;
+    position: relative;
+  }
+  
+  .container .gallery a:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 5;
+  }
+  
+  .clear {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+  
+
+.wrapper{
+    display:flex;
+    position:relative;
+}
+.wrapper .miniNav{
+    // make sidebar sticky
+    position:sticky;
+    top:0;
+    height:100%;
+    width:200px;
+    padding:20px 0px;
+    li{
+        padding:15px;
+        border-bottom:1px solid rgba(0,0,0,0.2);
+        list-style: none;
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size:1.5rem;
+            color:black;
+
+            &:hover{
+                background-position: left;
+            }
+        }
+    }
+}
+
+.wrapper .content{
+    width:100%;
+    margin-left:100px;
+    // margin-top: 1px;
+    // border-top:10px rgba(218,219,211,0.4) solid;
+    // border-right:10px #98BDCE solid;
+    // border-left:10px #98BDCE solid;
+    // border-bottom:10px rgb(218,219,211) solid;
+}
+
+h1{
+    text-align: center;
+}
+
+.worldMap{
+    margin-top: 1px;
+    // border-top:2.5px rgb(218,219,211) solid;
+    // border-right:5px #98BDCE solid;
+    // border-left:5px #98BDCE solid;
+    // border-bottom:2.5px rgb(218,219,211) solid;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:20vh;
+
+    li{
+        list-style:none;    
+    }
+}
+
+nav.bg{
+    // background: url(/images/sumoonwakeCROPPED.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.links{
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    
+    a{
+        display:flex;
+        text-decoration: none;
+
+        // gradient transition
+        // background-image: linear-gradient(to right, rgba(224, 230, 238, 0.8), rgba(174, 197, 228, 0.8), rgba(198,229,250,0.8), rgba(240,237,218,0.8), rgba(216, 255, 205, 0.8), rgba(193, 246, 255, 0.8), rgba(202, 224, 255, 0.8), rgba(208, 247, 234, 0.8), rgba(212, 232, 255, 0.8), rgba(219, 255, 252, 0.8), rgba(169, 252, 255, 0.8), rgba(165, 255, 228, 0.8));
+        background-size:300%;
+        background-position:right;
+        transition: 800ms background-position ease-in-out;
+
+        // border-top: 1px solid $origBorder-Color;
+        // border-left:1px solid $origBorder-Color;
+        // border-right: 3px solid $origBorder-Color;
+        border-bottom: 2px  solid  rgb(151, 179, 255);
+        
+        // border-radius:5px;
+
+        font-family: 'Sacramento', cursive;
+        
+        padding:3px;
+
+        font-size:3.5rem;
+        letter-spacing: 4px;
+        // font-weight:bold;
+        color: rgba(0, 0, 0, 0.8);
+        -webkit-text-fill-color: rgba(0, 0, 0, 0.8); /* Will override color (regardless of order) */
+        // -webkit-text-stroke-width: 1.5px;
+        // -webkit-text-stroke-color: black;
+
+        &:hover{
+            background-position:left;
+            // padding: 8px;
+
+            // font-size:2.9rem;
+            
+            // border-right: 6px solid $border-Color;
+            // border-bottom: 6px solid $border-Color;
+        }
+    }
+            
+}
+
+.burger{
+    display:none;
+    cursor:pointer;
+}
+
+.burger div{
+    width:50px;
+    height:6px;
+    background-color:$origBorder-Color;
+    margin:10px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1572px){
+    .links a{
+        font-size: 2.5rem;
+        -webkit-text-stroke-width: 1.3px;
+    }
+}
+
+@media screen and (max-width:1305px){
+    .links a{
+        font-size: 2rem;
+        -webkit-text-stroke-width: 1.1px;
+    }
+}
+
+
+@media screen and (max-width:780px){
+    .links a{
+        font-size:1.5rem;
+    }
+}
+
+@media screen and (max-width:645px){
+    // non-animate
+
+    // display:flex;
+    // font-size:1.5rem;
+    // -webkit-text-fill-color: $textNav-Color;
+    // -webkit-text-stroke-width: 1.1px;
+    // -webkit-text-stroke-color: black;
+    
+    body{
+        overflow-x: hidden;
+    }
+    .links{
+        z-index:1000;
+        position:absolute;
+        right:0px;
+        height:60vh;
+        top:25vh;
+        background-color:$linkPopUpColor;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+
+        li{
+            opacity:0;
+
+            a{
+                font-size:1.7rem;
+            }
+        }
+
+    }
+    
+    .burger{
+        display:block;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .links{
+        li{
+            a{
+                font-size:1.5rem;
+            }
+        }
+    }
+}
+
+
+.showMenuOnClick{
+    transform: translateX(0%);
+}
+
+
+
+// @media screen and (max-width:400px){
+//     .links{
+//         font-size:1rem;
+//         display:flex;
+//     }
+// }
+
+//link animation
+@keyframes linkFade{
+    from{
+        opacity:0;
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+//animate burger icon
+// change the rotation of the burger lines from 45deg and -45deg to 135deg and -135deg, to get an  arrow instead of an x
+
+.toggle .line1{
+    transform: rotate(135deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    transform: translate(15px,0);
+    width:70px;
+}
+
+.toggle .line3{
+    transform: rotate(-135deg) translate(-5px , -6px)
+}
