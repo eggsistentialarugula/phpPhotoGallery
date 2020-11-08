@@ -36,11 +36,6 @@
                 <!-- Recent Photos -->
                 <a href="forest.php">Forests</a>
             </li>
-            
-            <!-- <li> -->
-                <!-- Document/Photo Upload -->
-                <!-- <a href="/uploadStuff">文件相片上下載</a> -->
-            <!-- </li> -->
         </ul>
         
         <div class="burger">
