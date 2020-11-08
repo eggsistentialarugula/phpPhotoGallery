@@ -1,1 +1,1 @@
-SOMBWEWO OVA DUH RAINBWEWO
+I wanted to use PHP to read files from a directory, then generate a photo gallery from the files in the directory
