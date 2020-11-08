@@ -7,32 +7,28 @@
     <script src='jquery-3.0.0.js' type='text/javascript'></script> 
     <script type="text/javascript" src="simplelightbox-master/dist/simple-lightbox.js"></script>
     
-    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href='styles/style.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Begin Navbar -->
-    <nav>
+        <!-- Begin Navbar -->
+        <nav>
         <ul class = "links">
             <li>
-                <a id = "" href="index.php">Beach</a>
+                <a id = "" href="index.php">Ocean</a>
             </li>
             <li>
-                <!-- Family History Highlights  -->
                 <a href="mountains.php">Mountains</a>
             </li>
             <li>
-                <!-- Family Record -->
                 <a href="valley.php">Valley</a>
             </li>
             <li>
-                <!-- B & W Photo Scans -->
-                <a href="ocean.php">Oceans</a>
+                <a href="ocean.php">Lake</a>
             </li>
                 
             <li>
-                <!-- Recent Photos -->
                 <a href="forest.php">Forests</a>
             </li>
         </ul>
